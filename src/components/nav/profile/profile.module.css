@@ -1,0 +1,21 @@
+.profile {
+    display: grid;
+
+    grid-template-areas:
+        "a a"
+        "b c"
+        "b d";
+
+    grid-template-rows: 400px 1fr;
+    grid-template-columns: 3fr 9fr;
+
+    grid-gap: 1em;
+    padding: 0 1.7em;
+}
+
+.profile> * {
+    background-image: linear-gradient(45deg, #5b49ff 0%, #2bffd8 52%, #c7f165 90%);
+}
+.profile> :last-child{
+    background-image: none;
+}

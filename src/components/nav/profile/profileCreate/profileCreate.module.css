@@ -1,0 +1,41 @@
+.profileCreate {
+    grid-area: c;
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+    grid-template-areas:
+        "aa"
+        "bb"
+    ;
+}
+
+.profileCreate>* {
+    background-image: linear-gradient(45deg, #5b49ff 0%, #2bffd8 52%, #c7f165 90%);
+    padding: 10px;
+}
+
+
+.newPostBlock {
+    grid-area: aa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textarea {
+    height: 3vh;
+}
+
+textarea {
+    width: 100%;
+    height: 30%;
+}
+
+button {
+    padding: .7em;
+}
+
+.mediaButtons {
+    height: 25%;
+}

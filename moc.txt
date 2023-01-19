@@ -1,0 +1,3 @@
+elt newPostElement = React.createRef() - создаем ссылку на элемент
+newPostElement.current.value 
+<textarea ref={newPostElement}></textarea>

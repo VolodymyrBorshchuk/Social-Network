@@ -1,0 +1,35 @@
+.profile__top {
+    grid-area: a;
+    display: grid;
+    padding: .7em;
+    grid-template-rows: 50% 1fr;
+}
+
+.profile__block1 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile__block1 img {
+    width: 100%;
+}
+.profile__mainPhoto{
+    padding-top: 1em;
+}
+.profile__block2 img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.profile__fullName{
+    text-transform: capitalize;
+    font-size: 36px;
+    color: white;
+}
+
+.profile__block2{
+    display: flex;
+    padding-top: 1em;
+}

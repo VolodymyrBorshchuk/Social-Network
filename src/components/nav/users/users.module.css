@@ -1,0 +1,72 @@
+.users__container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 7em 1fr;
+    grid-template-columns: repeat(4, 3fr);
+    padding: 1em;
+
+}
+
+.title {
+    text-transform: uppercase;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 3em;
+}
+.title span {
+    margin-right: 10px;
+}
+
+.userCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+}
+/* .userCard > div:nth-child(3){
+    width: 100px;
+    height: 40px;
+    overflow: hidden;
+} */
+
+
+.userCard::before {
+    content: '';
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.userCard>:nth-child(even) {
+    margin: .4em auto;
+}
+
+.userPhoto {
+    border-radius: 50%;
+    overflow: hidden;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: initial;
+   width: 50%;
+}
+
+.userPhoto img {
+    width: 100%;
+}
+

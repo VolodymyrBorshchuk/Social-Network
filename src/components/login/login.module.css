@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.formSummaryError{
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+}

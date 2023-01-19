@@ -1,0 +1,34 @@
+.nav {
+    grid-area: nav;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    height: 87vh;
+    /* width: 13em; */
+    overflow-y: scroll;
+}
+
+.nav__item {
+    margin: 1em 0 0 2em;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #6c1c70;
+    transition-duration: .3s;
+    transition-property: all;
+}
+
+.nav__item a:hover {
+    color: black;
+    transition-duration: .6s;
+}
+
+.nav__item a.active {
+    color: rgb(176, 7, 7);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 1s;
+}
