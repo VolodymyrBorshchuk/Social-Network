@@ -8,7 +8,9 @@ import classes from "./profile.module.css"
 const Profile = (props) => {
     return (
         <div className={classes.profile}>
-            <ProfileTop profile={props.profile} user={props.user} status={props.status} updateStatus={props.updateStatus} />
+            <ProfileTop profile={props.profile} user={props.user} status={props.status} 
+            updateStatus={props.updateStatus} isOwner={props.isOwner}
+            savePhoto={props.savePhoto}/>
 
             <ProfileInfo />
 
