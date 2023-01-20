@@ -9,7 +9,7 @@ const container = document.querySelector('main');
 const root = createRoot(container);
 export let rerenderEntireTree = () => {
     root.render(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Provider store={store}>
                 <App />
             </Provider>
