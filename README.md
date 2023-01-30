@@ -1,3 +1,7 @@
+# For testing this React app, please, use this confidentials login and password
+### login: vovkavovka000@gmail.com
+### password: Guest
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
