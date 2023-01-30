@@ -1,6 +1,10 @@
-# For testing this React app, please, use this confidentials login and password
+# For testing this React app, please, use this confidential login and password
 ### login: vovkavovka000@gmail.com
 ### password: Guest
+
+The project is under development. In this regard, I hope for your decency in saving the data and using the 
+project exceptionally for the purpose of familiarizing yourself with the CV-project
+
 
 # Getting Started with Create React App
 
