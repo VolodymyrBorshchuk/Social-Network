@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from 'react';
 import { Nav } from "./components/nav/nav";
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 import './app.css'
 import { News } from './components/nav/news/news';
 import HeaderContainer from './components/header/headerContainer';
@@ -34,7 +34,9 @@ class App extends Component {
                             <Route path="/profile/:userId"
                                 element={<ProfileContainer />}
                             />
-                            <Route path="/profile/"
+
+                            <Route path="/" element={<Navigate to="/profile" />} />
+                            <Route path="/profile/*"
                                 element={<ProfileContainer />}
                             />
 
@@ -43,12 +45,14 @@ class App extends Component {
                             />
 
                             <Route path="/login"
-                                element={Login}
+                                element={<Login/>}
                             />
 
                             <Route path='users' element={<UsersContainer />} />
 
                             <Route path="/news" element={<News />} />
+
+                            <Route path="*" element={<div>Not found</div>} />
                         </Routes>
                     </Suspense>
                 </div>

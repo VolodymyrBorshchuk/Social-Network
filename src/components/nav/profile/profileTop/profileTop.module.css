@@ -2,7 +2,7 @@
     grid-area: a;
     display: grid;
     padding: .7em;
-    grid-template-rows: 50% 1fr;
+    grid-template-rows: 1fr;
 }
 
 .profile__block1 {
@@ -32,4 +32,6 @@
 .profile__block2{
     display: flex;
     padding-top: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

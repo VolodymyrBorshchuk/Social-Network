@@ -3,7 +3,7 @@ import { MyPosts } from "../myPosts/myPosts";
 import { Field, reduxForm } from "redux-form";
 import classes from "./profileCreate.module.css";
 import { required, maxLengthCreator } from "../../../../utils/validators/validators";
-import { TextArea } from "../../../common/formsControl/formsControl";
+import { Textarea } from "../../../common/formsControl/formsControl";
 
 const ProfileCreate = React.memo(props => {
 
@@ -35,7 +35,7 @@ const AddPostForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field name="newPostText" component={TextArea} validate={[required, maxLength10]} />
+                <Field name="newPostText" component={Textarea} validate={[required, maxLength10]} />
             </div>
             <div>
                 <button className={classes.newPostButton}>Add New Post</button>
